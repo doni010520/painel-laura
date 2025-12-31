@@ -308,7 +308,13 @@
       font-size: 1.05rem;
       font-weight: 600;
       color: var(--text-primary);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
+    }
+
+    .conversation-info .phone {
+      font-size: 0.9rem;
+      color: var(--accent-cyan);
+      margin-bottom: 4px;
     }
 
     .conversation-info .date {
@@ -454,7 +460,7 @@
 
   <div class="container">
     <header class="header">
-      <h1>Painel de Controle IA</h1>
+      <h1>Painel de Controle LAURA</h1>
       <p>Gerencie suas conversas e o status da inteligência artificial</p>
     </header>
 
@@ -584,6 +590,7 @@
         item.innerHTML = `
           <div class="conversation-info">
             <h3>${conv.nome || 'Sem nome'}</h3>
+            <div class="phone">📞 ${conv.telefone || 'Sem telefone'}</div>
             <div class="date">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
